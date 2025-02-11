@@ -8,7 +8,7 @@ The TENET.ExperimentHub package contains 6 datasets for use in the [TENET](https
 
 # Acquiring and installing TENET.ExperimentHub
 
-R 4.4 or a newer version is required.
+R 4.5 or a newer version is required.
 
 On Ubuntu 22.04, installation was successful in a fresh R environment after adding the official R Ubuntu repository using the instructions at <https://cran.r-project.org/bin/linux/ubuntu/> and running the following command in a terminal:
 

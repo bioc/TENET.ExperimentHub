@@ -50,7 +50,7 @@ all datasets are aligned to the hg38 human genome.
 
 # Acquiring and installing TENET.ExperimentHub
 
-R 4.4 or a newer version is required.
+R 4.5 or a newer version is required.
 
 On Ubuntu 22.04, installation was successful in a fresh R environment after
 adding the official R Ubuntu repository using the instructions at
