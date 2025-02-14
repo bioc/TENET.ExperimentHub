@@ -1,7 +1,7 @@
 Package: TENET.ExperimentHub
 Title: Experiment data for the TENET package
 Description: ExperimentHub package containing datasets for use in the TENET package's vignette and function examples. These include a variety of different objects to illustrate different datasets used in TENET functions. Where applicable, all datasets are aligned to the hg38 human genome.
-Version: 0.99.1
+Version: 0.99.2
 Authors@R: c(person("Rhie Lab at the University of Southern California", email = "rhielab@gmail.com", role = "cre"), person("Daniel", "Mullen", role = "aut", comment = c(ORCID = "0000-0002-7639-0549")), person("Zexun", "Wu", role = "aut", comment = c(ORCID = "0000-0003-2566-1326")), person("Ethan", "Nelson-Moore", role = "aut", comment = c(ORCID = "0009-0001-6903-9232")), person("Suhn", "Rhie", role = "aut", comment = c(ORCID = "0000-0002-5522-5296")))
 URL: https://github.com/rhielab/TENET.ExperimentHub
 BugReports: https://github.com/rhielab/TENET.ExperimentHub/issues
