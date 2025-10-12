@@ -984,12 +984,12 @@ names(methylationConversionVector) <- rownames(
 dataEnv <- new.env(parent = emptyenv())
 
 utils::data(
-    "humanTranscriptionFactorsList",
+    "humanTranscriptionFactorList",
     package = "TENET",
     envir = dataEnv
 )
 
-TFIDs <- dataEnv$humanTranscriptionFactorsList
+TFIDs <- dataEnv$humanTranscriptionFactorList
 
 ## Remove the non ENSG TFs
 TFIDs <- TFIDs[startsWith(TFIDs, "ENSG")]
@@ -1407,41 +1407,42 @@ save(
 ## Code to prepare the `exampleTENETTADRegions` dataset
 
 ## This is a GRanges object with information for topologically
-## associating domains (TAD) from the 3D Genome Browser website
-## (http://3dgenome.fsm.northwestern.edu/publications.html)
-## annotated to the hg38 genome. We only use the TADs from the "T470" cells.
-## Note: T470 is probably T47D, a breast cancer cell line, as T470 cells
-## don't seem to exist.
-
-## Define the URL to the .zip file containing hg38 TADs
-TADFileURL <- "http://3dgenome.fsm.northwestern.edu/downloads/hg38.TADs.zip"
+## associating domains (TAD) from the ENCODE Consortium.
+## annotated to the hg38 genome from the T47D breast cancer cell line.
+## Note: This has changed from previous versions which used a file from the
+## 3D genome browser. Since the update to the 3D genome browser 2, the original
+## file has become unavailable. However, this change does not affect the
+## viability of this dataset as an example.
 
 ## Download the .zip file
-download.file(TADFileURL, "data-raw/hg38.TADs.zip")
-
-## Unzip the file
-unzip("data-raw/hg38.TADs.zip", exdir = "data-raw")
-
-## Load the data for the "T470" cells, adding column names that GenomicRanges
-## can recognize
-exampleTENETTADRegions <- utils::read.delim(
-    "data-raw/hg38/T470_raw-merged_TADs.txt",
-    header = FALSE,
-    stringsAsFactors = FALSE,
-    col.names = c("chr", "start", "end")
+download.file(
+    paste0(
+        "https://www.encodeproject.org/",
+        "files/ENCFF183RCR/@@download/ENCFF183RCR.bed.gz"
+    ),
+    "data-raw/ENCFF183RCR.bed.gz"
 )
 
+## Load the data for the T47D cells.
+exampleTENETTADRegions <- utils::read.delim(
+    "data-raw/ENCFF183RCR.bed.gz",
+    header = FALSE,
+    stringsAsFactors = FALSE
+)
+
+## Delete the columns with region names and scores.
+exampleTENETTADRegions$V4 <- NULL
+exampleTENETTADRegions$V5 <- NULL
+
+## Change the names of the first three columns to reflect the information
+## contained in each.
+colnames(exampleTENETTADRegions) <- c("chr", "start", "end")
+
 ## Delete the downloaded files
-file.remove("data-raw/hg38.TADs.zip")
-unlink("data-raw/hg38", recursive = TRUE)
+file.remove("data-raw/ENCFF183RCR.bed.gz")
 
 ## Add a dummy strand column
 exampleTENETTADRegions$strand <- "*"
-
-## One row seems to be improperly formatted, so remove it
-exampleTENETTADRegions <- exampleTENETTADRegions[
-    ((exampleTENETTADRegions$end - exampleTENETTADRegions$start) > 0),
-]
 
 ## Convert the data frame into a GRanges object and make sure the values get
 ## 1-indexed
