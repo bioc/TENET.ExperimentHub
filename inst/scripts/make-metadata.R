@@ -118,7 +118,7 @@ meta <- data.frame(
             "PMID: 32009147; PMCID: PMC7102997."
         )
     ),
-    BiocVersion = "3.22",
+    BiocVersion = c("3.20", "3.20", "3.20", "3.20", "3.20", "3.22"),
     Genome = c(
         "hg38", NA, "hg38", "hg38", "hg38", "hg38"
     ),
@@ -134,7 +134,10 @@ meta <- data.frame(
             "https://www.encodeproject.org/files/ENCFF112JVK/",
             "@@download/ENCFF112JVK.bed.gz"
         ),
-        "https://www.encodeproject.org/files/ENCFF183RCR/@@download/ENCFF183RCR.bed.gz"
+        paste0(
+            "https://www.encodeproject.org/files/ENCFF183RCR/",
+            "@@download/ENCFF183RCR.bed.gz"
+        )
     ),
     SourceVersion = c(NA, NA, NA, NA, NA, NA),
     Species = "Homo sapiens",
