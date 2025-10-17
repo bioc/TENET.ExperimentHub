@@ -105,7 +105,7 @@ meta <- data.frame(
             "downloaded from the ENCODE website at ",
             "<https://www.encodeproject.org/experiments/ENCSR549MGQ/>, with ",
             "the specific file being <https://www.encodeproject.org/files/",
-            "ENCFF183RCR/@@download/ENCFF183RCR.bed.gz>.",
+            "ENCFF183RCR/@@download/ENCFF183RCR.bed.gz>. ",
             "Citations: Lajoie B, Dekker J, Kaplan N. The Hitchhiker's guide ",
             "to Hi-C analysis: practical guidelines. Methods. 2015 Jan 15;",
             "72:65-75. doi: 10.1016/j.ymeth.2014.10.031. PMID: 25448293; ",
