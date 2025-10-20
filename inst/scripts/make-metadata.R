@@ -101,24 +101,17 @@ meta <- data.frame(
             "A GenomicRanges dataset with example topologically associating ",
             "domains (TADs), used to demonstrate TENET's ",
             "`step7TopGenesTADTables` function. The TADs are derived from ",
-            "T47D cells and aligned to the human hg38 genome. They were ",
-            "downloaded from the ENCODE website at ",
-            "<https://www.encodeproject.org/experiments/ENCSR549MGQ/>, with ",
-            "the specific file being <https://www.encodeproject.org/files/",
-            "ENCFF183RCR/@@download/ENCFF183RCR.bed.gz>. ",
-            "Citations: Lajoie B, Dekker J, Kaplan N. The Hitchhiker's guide ",
-            "to Hi-C analysis: practical guidelines. Methods. 2015 Jan 15;",
-            "72:65-75. doi: 10.1016/j.ymeth.2014.10.031. PMID: 25448293; ",
-            "PMCID: PMC4347522. Yardımcı GG, Ozadam H, Sauria MEG, et al. ",
-            "Measuring the reproducibility and quality of Hi-C data. Genome ",
-            "Biol. 2019 Mar 19;20(1):57. doi: 10.1186/s13059-019-1658-7. ",
-            "PMID: 30890172; PMCID: PMC6423771. Krismer K, Guo Y, Gifford DK, ",
-            "et al. IDR2D identifies reproducible genomic interactions. ",
-            "Nucleic Acids Res. 2020 Apr 6;48(6):e31. doi: 10.1093/nar/gkaa030",
-            "PMID: 32009147; PMCID: PMC7102997."
+            "T47D cells (mistakenly labeled as 'T470'), and aligned to the ",
+            "human hg38 genome. They were downloaded from the 3D ",
+            "Genome Browser at <http://3dgenome.fsm.northwestern.edu>. ",
+            "Citation: Wang Y, Song F, Zhang B, et al. The 3D Genome ",
+            "Browser: a web-based browser for visualizing 3D genome ",
+            "organization and long-range chromatin interactions. Genome Biol. ",
+            "2018 Oct 4;19(1):151. doi: 10.1186/s13059-018-1519-9. PMID: ",
+            "30286773; PMCID: PMC6172833."
         )
     ),
-    BiocVersion = c("3.22", "3.20", "3.20", "3.20", "3.20", "3.22"),
+    BiocVersion = c("3.22", "3.20", "3.20", "3.20", "3.20", "3.20"),
     Genome = c(
         "hg38", NA, "hg38", "hg38", "hg38", "hg38"
     ),
@@ -134,10 +127,7 @@ meta <- data.frame(
             "https://www.encodeproject.org/files/ENCFF112JVK/",
             "@@download/ENCFF112JVK.bed.gz"
         ),
-        paste0(
-            "https://www.encodeproject.org/files/ENCFF183RCR/",
-            "@@download/ENCFF183RCR.bed.gz"
-        )
+        "http://3dgenome.fsm.northwestern.edu/downloads/hg38.TADs.zip"
     ),
     SourceVersion = c(NA, NA, NA, NA, NA, NA),
     Species = "Homo sapiens",
@@ -149,7 +139,7 @@ meta <- data.frame(
         "Multiple",
         "TCGA",
         "ENCODE",
-        "ENCODE"
+        "3D Genome Browser"
     ),
     Maintainer = (
         "Rhie Lab at the University of Southern California <rhielab@gmail.com>"
