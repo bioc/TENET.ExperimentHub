@@ -149,8 +149,11 @@ meta <- data.frame(
         "SummarizedExperiment", "GRanges", "GRanges"
     ),
     DispatchClass = "Rda",
+    Location_Prefix = c(
+        "https://zenodo.org/records/17403577/files/", NA, NA, NA, NA, NA
+    ),
     RDataPath = c(
-        "TENET.ExperimentHub/exampleTENETMultiAssayExperiment.Rda",
+        "exampleTENETMultiAssayExperiment.Rda",
         "TENET.ExperimentHub/exampleTENETClinicalDataFrame.Rda",
         paste0(
             "TENET.ExperimentHub/",
