@@ -1414,11 +1414,11 @@ save(
 ## don't seem to exist.
 
 ## Define the URL to the .zip file containing hg38 TADs
-## Due to updates in the 3D genome browser, this file is no longer easily
-## available, so we use web.archive to find it again.
+## Due to updates to the 3D Genome Browser, this file is no longer easily
+## available, so we retrieve it from the Internet Archive.
 TADFileURL <- paste0(
-    "https://web.archive.org/web/20221027140625id_",
-    "/http://3dgenome.fsm.northwestern.edu/downloads/hg38.TADs.zip"
+    "https://web.archive.org/web/20221027140625id_/",
+    "http://3dgenome.fsm.northwestern.edu/downloads/hg38.TADs.zip"
 )
 
 ## Download the .zip file
