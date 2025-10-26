@@ -30,7 +30,7 @@ Genome Biol. 2018 Oct 4;19(1):151. doi: 10.1186/s13059-018-1519-9. PMID:
 30286773; PMCID: PMC6172833.
 }
 \examples{
-\dontshow{if (interactive()) (if (getRversion() >= "3.4") withAutoprint else force)(\{ # examplesIf}
+\dontshow{if (interactive()) withAutoprint(\{ # examplesIf}
 exampleTENETTADRegions()
 \dontshow{\}) # examplesIf}
 }

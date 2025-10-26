@@ -202,7 +202,7 @@ clinical data contained in the colData of the
 \code{exampleTENETMultiAssayExperiment} object.
 }
 \examples{
-\dontshow{if (interactive()) (if (getRversion() >= "3.4") withAutoprint else force)(\{ # examplesIf}
+\dontshow{if (interactive()) withAutoprint(\{ # examplesIf}
 exampleTENETClinicalDataFrame()
 \dontshow{\}) # examplesIf}
 }

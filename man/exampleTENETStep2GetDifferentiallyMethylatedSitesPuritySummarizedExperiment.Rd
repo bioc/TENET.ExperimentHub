@@ -30,7 +30,7 @@ would contain DNA methylation data from potentially confounding sources,
 used with TENET's \code{step2GetDifferentiallyMethylatedSites} function.
 }
 \examples{
-\dontshow{if (interactive()) (if (getRversion() >= "3.4") withAutoprint else force)(\{ # examplesIf}
+\dontshow{if (interactive()) withAutoprint(\{ # examplesIf}
 exampleTENETStep2GetDifferentiallyMethylatedSitesPuritySummarizedExperiment()
 \dontshow{\}) # examplesIf}
 }

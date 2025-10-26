@@ -26,7 +26,6 @@ if (!requireNamespace("BiocManager", quietly = TRUE)) {
     install.packages("BiocManager")
 }
 
-BiocManager::install(version = "devel")
 BiocManager::install("TENET.ExperimentHub")
 ```
 The development version containing the most recent updates is available from [our GitHub repository](https://github.com/rhielab/TENET.ExperimentHub).

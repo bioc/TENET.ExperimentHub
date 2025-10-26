@@ -12,8 +12,15 @@ in this script
 * Update the link to the example TAD dataset to use the Internet
 Archive since the original URL is no longer accessible
 
+* Do not suggest installing the development version of Bioconductor
+to use the stable version of the package, since it is no longer necessary
+
 * Update installation instructions for Ubuntu 24.04 and add a missing
 required package
+
+* Add CITATION file
+
+* Add TENET to `Suggests` field in DESCRIPTION
 
 1.1.0
 =====

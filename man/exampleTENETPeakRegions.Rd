@@ -30,7 +30,7 @@ Jul;583(7818):699-710. doi: 10.1038/s41586-020-2493-4. Epub 2020 Jul 29.
 Erratum in: Nature. 2022 May;605(7909):E3. PMID: 32728249; PMCID: PMC7410828.
 }
 \examples{
-\dontshow{if (interactive()) (if (getRversion() >= "3.4") withAutoprint else force)(\{ # examplesIf}
+\dontshow{if (interactive()) withAutoprint(\{ # examplesIf}
 exampleTENETPeakRegions()
 \dontshow{\}) # examplesIf}
 }
