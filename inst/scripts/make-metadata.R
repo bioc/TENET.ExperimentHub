@@ -150,10 +150,10 @@ meta <- data.frame(
     ),
     DispatchClass = "Rda",
     Location_Prefix = c(
-        "https://zenodo.org/records/17403577/files/", NA, NA, NA, NA, NA
+        "https://zenodo.org/", NA, NA, NA, NA, NA
     ),
     RDataPath = c(
-        "exampleTENETMultiAssayExperiment.Rda",
+        "records/17403577/files/exampleTENETMultiAssayExperiment.Rda",
         "TENET.ExperimentHub/exampleTENETClinicalDataFrame.Rda",
         paste0(
             "TENET.ExperimentHub/",
